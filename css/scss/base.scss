@@ -1,0 +1,25 @@
+/*Colors*/
+$madison: #2c3e50; /*top header*/
+$cello: #34495e; /*main header, hover pagination*/
+$spray: #85d6de;
+$slate-gray: #737c85;
+$late-slate-gray: #758594;
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$open-sans: 'Open Sans', sans-serif;
+
+body {
+  font-family: $open-sans;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $open-sans;
+}
+p {
+  font-family: $open-sans;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {}

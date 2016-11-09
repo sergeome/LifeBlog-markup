@@ -1,0 +1,46 @@
+header {
+  width: 100%;
+  background: $cello;
+  .header-wrapper {
+    padding: 10px 0 0 0;
+    max-width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
+    .top {
+      width: 100%;
+      padding: 11px 0 15px 0;
+      background: $madison;
+      overflow: hidden;
+      ul.contact {
+        float: left;
+        li {
+          display: inline-block;
+          float: left;
+          a {
+            color: $late-slate-gray;
+          }
+          .contact {
+          }
+        }
+      }
+      form {
+        float: right;
+      }
+    }
+    .logo{
+      float: left;
+    }
+    nav.topnav{
+      float: right;
+    }
+  }
+}
+header .top {
+  font-size: 12px;
+}
+.header .top a {
+  color: $late-slate-gray;
+}
+label[for="search"] {
+  font-style: italic;
+}

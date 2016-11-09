@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>LifeBlog</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/style.css">
 </head>
 <body>
-<div class="header-wrapper">
-    <header>
+<header>
+    <div class="header-wrapper">
         <div class="top">
             <ul class="contact">
-                <li class="address"><a href="#">505 Custom Street, Allen, TX 12345</a></li>
+                <li class="address">
+                    <a href="#">505 Custom Street, Allen, TX 12345</a>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                </li>
                 <li class="phone"><a href="#">+1-999-444-1234</a></li>
                 <li class="email"><a href="#">info@lifeblog.com</a></li>
             </ul>
@@ -32,10 +35,10 @@
                 <li><a href="#">Category2</a></li>
             </ul>
         </nav>
-    </header>
-</div>
-<div class="middle-wrapper">
-    <section class="middle">
+    </div>
+</header>
+<div class="middle">
+    <div class="middle-wrapper">
         <ul class="breadcrumbs">
             <li><a href="#">item1</a></li>
             <li><a href="#">item2</a></li>
@@ -105,11 +108,13 @@
                 </ul>
             </div>
         </aside>
-    </section>
+    </div>
 </div>
 <footer>
-    <ul class="bottom-nav"></ul>
-    <div class="copyright"></div>
+    <div class="footer-wrapper">
+        <ul class="bottom-nav"></ul>
+        <div class="copyright"></div>
+    </div>
 </footer>
 </body>
 </html>
