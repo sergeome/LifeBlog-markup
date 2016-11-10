@@ -1,0 +1,14 @@
+footer{
+  width: 100%;
+  background: $cello;
+  .footer-wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
+    .copyright{
+      text-align: center;
+      padding: 25px 0;
+      color: $late-slate-gray;
+      font-size: 12px;
+    }
+  }
+}

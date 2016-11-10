@@ -3,7 +3,7 @@ header {
   background: $cello;
   .header-wrapper {
     padding: 10px 0 0 0;
-    max-width: 1170px;
+    max-width: $max-width;
     overflow: hidden;
     margin: 0 auto;
     .top {
