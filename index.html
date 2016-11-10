@@ -3,6 +3,7 @@
 <head>
     <title>LifeBlog</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/scss/style.css">
 </head>
 <body>
@@ -11,28 +12,39 @@
         <div class="top">
             <ul class="contact">
                 <li class="address">
+                    <i class="fa fa-location-arrow fa-lg" aria-hidden="true"></i>
                     <a href="#">505 Custom Street, Allen, TX 12345</a>
-                    <i class="fa fa-mobile" aria-hidden="true"></i>
                 </li>
-                <li class="phone"><a href="#">+1-999-444-1234</a></li>
-                <li class="email"><a href="#">info@lifeblog.com</a></li>
+                <li class="phone">
+                    <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
+                    <a href="#">+1-999-444-1234</a>
+                </li>
+                <li class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="#">info@lifeblog.com</a>
+                </li>
             </ul>
             <form>
                 <label for="search">search</label>
-                <input type="search" id="search">
-                <input type="submit">
+                <input type="search" id="search" placeholder="search...">
+                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <!--<input type="submit">-->
             </form>
         </div>
         <div class="logo">
-            <a href="#"><img src="#" alt="logo"></a>
-            <div class="title">LifeBlog<a href="#"></a></div>
-            <div class="description"><a href="#">We make a difference</a></div>
+            <a href="#"><img src="logo%20sign.png" alt="logo"></a>
+            <div class="site-name">
+                <h1 class="title"><a href="#">LifeBlog</a></h1>
+                <h2 class="description"><a href="#">We make a difference</a></h2>
+            </div>
         </div>
         <nav class="topnav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Category1</a></li>
-                <li><a href="#">Category2</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
     </div>

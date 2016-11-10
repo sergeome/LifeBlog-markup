@@ -8,7 +8,7 @@ header {
     margin: 0 auto;
     .top {
       width: 100%;
-      padding: 11px 0 15px 0;
+      padding: 6px 0 9px 0;
       background: $madison;
       overflow: hidden;
       ul.contact {
@@ -16,31 +16,100 @@ header {
         li {
           display: inline-block;
           float: left;
+          color: $late-slate-gray;
           a {
-            color: $late-slate-gray;
-          }
-          .contact {
+            display: inline-block;
+            margin: 0 30px 0 8px;
+            font-size: 12px;
           }
         }
       }
       form {
         float: right;
+        position: relative;
+        label[for="search"] {
+          opacity: 0;
+        }
+        input {
+          &[type="search"] {
+            outline: none;
+            border: none;
+            background: $cello;
+            width: 360px;
+            height: 25px;
+            border-radius: 15px;
+            padding: 0 25px 0 13px;
+          }
+          &[placeholder]{
+            color: #fff;
+          }
+        }
+        .search-icon {
+          position: absolute;
+          right: 20px;
+          top: 4px;
+          color: $late-slate-gray;;
+        }
       }
     }
-    .logo{
+    .logo {
       float: left;
+      padding: 28px 0 0 0;
+      a {
+        float: left;
+        img {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+        }
+      }
+      .site-name {
+        float: left;
+        margin: -5px 0 0 20px;
+      }
     }
-    nav.topnav{
+    nav.topnav {
       float: right;
+      margin: 46px 0 36px 0;
+      color: #fff;
+      ul {
+        li {
+          float: left;
+          margin: 0 40px 0 0;
+          &.active {
+            opacity: 0.7;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }
-header .top {
-  font-size: 12px;
-}
-.header .top a {
+
+//Placeholders
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: $late-slate-gray;
+  font-style: italic;
 }
-label[for="search"] {
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $late-slate-gray;
+  font-style: italic;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $late-slate-gray;
+  font-style: italic;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $late-slate-gray;
   font-style: italic;
 }
