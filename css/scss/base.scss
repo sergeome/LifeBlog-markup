@@ -11,6 +11,12 @@ $max-width: 1170px;
 /*fonts*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 $open-sans: 'Open Sans', sans-serif;
+$FontAwesome: 'FontAwesome';
+
+@font-face {
+  font-family: Varela;
+  src: url("../fonts/VarelaRound.ttf");
+}
 
 body {
   font-family: $open-sans;
@@ -21,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #fff;
   font-size: 23px;
+  font-family: Varela;
 }
 h2 {
   color: #fff;

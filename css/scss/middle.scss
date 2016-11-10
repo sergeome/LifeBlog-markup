@@ -1,3 +1,157 @@
-.middle{
+.middle {
   clear: both;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  ul.breadcrumbs {
+    padding: 36px 0 26px 9px;
+    margin: 0 0 64px 0;
+    border-bottom: 1px solid #dfe6e7;
+    font-size: 12px;
+    color: $cello;
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+      position: relative;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:after {
+        position: absolute;
+        right: -15px;
+        top: 4px;
+        font-family: $FontAwesome;
+        display: inline-block;
+        content: "\f054";
+        color: $cello;
+      }
+      &:last-child {
+        text-decoration: underline;
+        margin-right: 0;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  .main-content {
+    float: left;
+    article {
+      max-width: 720px;
+      margin: 0 0 72px 0;
+      .post-image {
+        border: 1px solid #dfe6e7;
+        padding: 19px;
+        position: relative;
+        time {
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          background: $spray;
+          left: 0;
+          top: 150px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 17px 0 0 10px;
+          box-sizing: border-box;
+        }
+      }
+      .post-title {
+        font-family: Varela;
+        font-size: 28px;
+        margin: 26px 0 17px 0;
+      }
+      .post-description{
+        font-size: 14px;
+        color: $slate-gray;
+        line-height: 26px;
+        .read-more{
+          display: inline-block;
+          margin: 0 0 0 10px;
+          position: relative;
+          color: $cello;
+          &:hover{
+            opacity: 0.8;
+          }
+          &:after {
+            position: absolute;
+            right: -13px;
+            top: 2px;
+            font-family: $FontAwesome;
+            display: inline-block;
+            content: "\f054";
+            font-size: small;
+            color: $cello;
+          }
+        }
+      }
+    }
+    ul.pagination{
+      overflow: hidden;
+      margin: 0 0 123px 0;
+      li {
+        display: inline-block;
+        &:first-child{
+          float: left;
+          margin: 0 150px 0 0;
+        }
+        &:last-child{
+          float: right;
+        }
+        a {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          background: #dfe6e7;
+          color: $cello;
+          padding: 19px 0 0 26px;
+          box-sizing: border-box;
+          font: 600 18px "Open Sans", sans-serif;
+          &:hover{
+            background: $cello;
+            color: #fff;
+          }
+          &.prev{
+            background: $spray;
+            position: relative;
+            &:hover{
+              opacity: 0.7;
+            }
+            &:after{
+              position: absolute;
+              left: 21px;
+              top: 23px;
+              font-family: $FontAwesome;
+              display: inline-block;
+              content: "\f053";
+              color: #fff;
+            }
+          }
+          &.next{
+            background: $spray;
+            position: relative;
+            &:hover{
+              opacity: 0.7;
+            }
+            &:after{
+              position: absolute;
+              right: 21px;
+              top: 23px;
+              font-family: $FontAwesome;
+              display: inline-block;
+              content: "\f054";
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    float: right;
+  }
+
 }
