@@ -1,15 +1,14 @@
 header {
   width: 100%;
   background: $cello;
-  .header-wrapper {
-    padding: 10px 0 0 0;
-    max-width: $max-width;
-    overflow: hidden;
-    margin: 0 auto;
+  padding: 11px 0 0 0;
+  .top-wrapper {
+    width: 100%;
+    background: $madison;
     .top {
-      width: 100%;
+      max-width: $max-width;
+      margin: 0 auto;
       padding: 6px 0 9px 0;
-      background: $madison;
       overflow: hidden;
       ul.contact {
         float: left;
@@ -40,7 +39,7 @@ header {
             border-radius: 15px;
             padding: 0 25px 0 13px;
           }
-          &[placeholder]{
+          &[placeholder] {
             color: #fff;
           }
         }
@@ -52,9 +51,14 @@ header {
         }
       }
     }
+  }
+  .header-wrapper {
+    max-width: $max-width;
+    overflow: hidden;
+    margin: 0 auto;
     .logo {
       float: left;
-      padding: 28px 0 0 0;
+      padding: 28px 0 30px 0;
       a {
         float: left;
         img {
@@ -70,12 +74,11 @@ header {
     }
     nav.topnav {
       float: right;
-      margin: 46px 0 36px 0;
       color: #fff;
       ul {
         li {
           float: left;
-          margin: 0 40px 0 0;
+          margin: 44px 40px 0 0;
           &.active {
             opacity: 0.7;
           }
@@ -93,7 +96,6 @@ header {
     }
   }
 }
-
 //Placeholders
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: $late-slate-gray;
