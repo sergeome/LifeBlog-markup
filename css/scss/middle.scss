@@ -189,6 +189,32 @@
     }
     .popular {
       margin: 0 0 65px 0;
+      .tabs-navigation{
+        width: 100%;
+        overflow: hidden;
+        li {
+          float: left;
+          color: $cello;
+          padding: 8px 0;
+          &.active {
+            border: solid 1px #e4e5db;
+            border-bottom: none;
+            background: #dfe6e7;
+          }
+          &:hover {
+            background: $spray;
+            color: #fff;
+          }
+          a {
+            padding: 6px;
+          }
+        }
+      }
+      .tab-panel {
+        clear: both;
+        padding: 20px 0 0 0;
+        background: #dfe6e7;
+      }
     }
     .tags {
       .tags-title {
