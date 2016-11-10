@@ -63,16 +63,16 @@
         font-size: 28px;
         margin: 26px 0 17px 0;
       }
-      .post-description{
+      .post-description {
         font-size: 14px;
         color: $slate-gray;
         line-height: 26px;
-        .read-more{
+        .read-more {
           display: inline-block;
           margin: 0 0 0 10px;
           position: relative;
           color: $cello;
-          &:hover{
+          &:hover {
             opacity: 0.8;
           }
           &:after {
@@ -88,16 +88,16 @@
         }
       }
     }
-    ul.pagination{
+    ul.pagination {
       overflow: hidden;
       margin: 0 0 123px 0;
       li {
         display: inline-block;
-        &:first-child{
+        &:first-child {
           float: left;
           margin: 0 150px 0 0;
         }
-        &:last-child{
+        &:last-child {
           float: right;
         }
         a {
@@ -109,17 +109,17 @@
           padding: 19px 0 0 26px;
           box-sizing: border-box;
           font: 600 18px "Open Sans", sans-serif;
-          &:hover{
+          &:hover {
             background: $cello;
             color: #fff;
           }
-          &.prev{
+          &.prev {
             background: $spray;
             position: relative;
-            &:hover{
+            &:hover {
               opacity: 0.7;
             }
-            &:after{
+            &:after {
               position: absolute;
               left: 21px;
               top: 23px;
@@ -129,13 +129,13 @@
               color: #fff;
             }
           }
-          &.next{
+          &.next {
             background: $spray;
             position: relative;
-            &:hover{
+            &:hover {
               opacity: 0.7;
             }
-            &:after{
+            &:after {
               position: absolute;
               right: 21px;
               top: 23px;
@@ -151,7 +151,76 @@
   }
 
   aside {
-    float: right;
+    float: left;
+    max-width: 362px;
+    margin: 0 0 0 60px;
+    overflow: hidden;
+    .archive {
+      margin: 0 0 65px 0;
+      .archive-title {
+        font: normal 20px Varela;
+        color: $cello;
+        margin: 0 0 23px 0;
+      }
+      ul {
+        li {
+          a {
+            display: inline-block;
+            font-size: 16px;
+            color: $slate-gray;
+            position: relative;
+            margin: 0 0 0 27px;
+            line-height: 40px;
+            &:hover {
+              opacity: 0.7;
+            }
+            &:before {
+              position: absolute;
+              content: " ";
+              background: url("../images/bullet.png");
+              left: -27px;
+              top: 12px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+    .popular {
+      margin: 0 0 65px 0;
+    }
+    .tags {
+      .tags-title {
+        font: normal 20px Varela;
+        color: $cello;
+        margin: 0 0 23px 0;
+      }
+      ul {
+        margin-left: -5px;
+        overflow: hidden;
+        li {
+          display: inline-block;
+          margin: 5px;
+          float: left;
+          &:last-child{
+           margin-left: 0;
+          }
+          a {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #dfe6e7;
+            color: $cello;
+            border-radius: 30px;
+            font-size: 12px;
+            &:hover{
+              background: $spray;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 
 }
