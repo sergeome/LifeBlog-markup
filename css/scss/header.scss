@@ -100,18 +100,22 @@ header {
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: $late-slate-gray;
   font-style: italic;
+  font-weight: normal;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: $late-slate-gray;
   font-style: italic;
   opacity: 1;
+  font-weight: normal;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: $late-slate-gray;
   font-style: italic;
   opacity: 1;
+  font-weight: normal;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: $late-slate-gray;
   font-style: italic;
+  font-weight: normal;
 }
