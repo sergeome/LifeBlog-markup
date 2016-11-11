@@ -109,6 +109,10 @@
           padding: 19px 0 0 26px;
           box-sizing: border-box;
           font: 600 18px "Open Sans", sans-serif;
+          &.active {
+            background: $cello;
+            color: #fff;
+          }
           &:hover {
             background: $cello;
             color: #fff;
