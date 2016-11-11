@@ -13,8 +13,9 @@
       display: inline-block;
       margin: 0 20px 0 0;
       position: relative;
+      font-weight: 600;
       &:hover {
-        text-decoration: underline;
+        color: $spray;
       }
       &:after {
         position: absolute;
@@ -25,12 +26,12 @@
         content: "\f054";
         color: $cello;
       }
-      &:last-child {
-        text-decoration: underline;
-        margin-right: 0;
+      &.active {
+        color: $spray;
       }
       &:last-child:after {
         display: none;
+        margin-right: 0;
       }
     }
   }
@@ -62,6 +63,9 @@
         font-family: Varela;
         font-size: 28px;
         margin: 26px 0 17px 0;
+        a:hover {
+          color: $spray;
+        }
       }
       .post-description {
         font-size: 14px;
@@ -90,7 +94,7 @@
     }
     ul.pagination {
       overflow: hidden;
-      margin: 0 0 123px 0;
+      margin: 0 0 30px 0;
       li {
         display: inline-block;
         &:first-child {
@@ -193,7 +197,7 @@
     }
     .popular {
       margin: 0 0 65px 0;
-      .tabs-navigation{
+      .tabs-navigation {
         width: 100%;
         float: left;
         .tab-link {
@@ -205,6 +209,7 @@
           &.active {
             background: $spray;
             opacity: 1;
+            color: #fff;
           }
           &:hover {
             opacity: 1;
@@ -219,20 +224,26 @@
         border: solid 1px #e4e5db;
         clear: both;
         padding: 25px 0 0 25px;
-        .post-preview{
+        .post-preview {
           max-width: 311px;
           margin: 0 0 40px 0;
-          .img-wrapper{
+          .img-wrapper {
             max-width: 311px;
-            img{
+            a:hover {
+              opacity: 0.7;
+            }
+            img {
               width: 100%;
             }
           }
-          .post-preview-title{
+          .post-preview-title {
             font-family: Varela;
             margin: 8px 0;
+            a:hover {
+              color: $spray;
+            }
           }
-          .post-preview-description{
+          .post-preview-description {
             font-size: 14px;
             color: $slate-gray;
           }
@@ -252,8 +263,8 @@
           display: inline-block;
           margin: 5px;
           float: left;
-          &:last-child{
-           margin-left: 0;
+          &:last-child {
+            margin-left: 0;
           }
           a {
             display: inline-block;
@@ -262,7 +273,7 @@
             color: $cello;
             border-radius: 30px;
             font-size: 12px;
-            &:hover{
+            &:hover {
               background: $spray;
               color: #fff;
             }

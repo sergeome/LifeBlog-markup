@@ -30,14 +30,14 @@ header {
           opacity: 0;
         }
         input {
-          &[type="search"] {
+          &[type="text"] {
             outline: none;
             border: none;
             background: $cello;
             width: 360px;
             height: 25px;
             border-radius: 15px;
-            padding: 0 25px 0 13px;
+            padding: 0 40px 0 13px;
           }
           &[placeholder] {
             color: #fff;
