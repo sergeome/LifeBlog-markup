@@ -16,24 +16,24 @@ function openTab(targetTab) {
   }
 
   for (var i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
+    tabContent[i].className = "tab-panel hidden";
   }
 
   for (var j = 0; j < tabLinks.length; j++) {
     tabLinks[j].className = "tab-link";
   }
 
-  tabLinks[indexOfTargetTab].className += " active";
-  tabContent[indexOfTargetTab].style.display = "block";
+  tabLinks[indexOfTargetTab].className = "tab-link active";
+  tabContent[indexOfTargetTab].className = "tab-panel";
 }
 
 function openTabByDefault() {
   for (var i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
+    tabContent[i].className = "tab-panel hidden";
   }
 
-  tabLinks[0].className += " active";
-  tabContent[0].style.display = "block";
+  tabLinks[0].className = "tab-link active";
+  tabContent[0].className = "tab-panel";
 }
 
 openTabByDefault();
