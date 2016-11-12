@@ -1,121 +1,98 @@
-header {
+.page-header {
   width: 100%;
   background: $cello;
   padding: 11px 0 0 0;
-  .top-wrapper {
-    width: 100%;
-    background: $madison;
-    .top {
-      max-width: $max-width;
-      margin: 0 auto;
-      padding: 6px 0 9px 0;
-      overflow: hidden;
-      ul.contact {
-        float: left;
-        li {
-          display: inline-block;
-          float: left;
-          color: $late-slate-gray;
-          a {
-            display: inline-block;
-            margin: 0 30px 0 8px;
-            font-size: 12px;
-          }
-        }
-      }
-      form {
-        float: right;
-        position: relative;
-        label[for="search"] {
-          opacity: 0;
-        }
-        input {
-          &[type="text"] {
-            outline: none;
-            border: none;
-            background: $cello;
-            width: 360px;
-            height: 25px;
-            border-radius: 15px;
-            padding: 0 40px 0 13px;
-          }
-          &[placeholder] {
-            color: #fff;
-          }
-        }
-        .search-icon {
-          position: absolute;
-          right: 20px;
-          top: 4px;
-          color: $late-slate-gray;;
-        }
-      }
-    }
-  }
-  .header-wrapper {
-    max-width: $max-width;
-    overflow: hidden;
-    margin: 0 auto;
-    .logo {
-      float: left;
-      padding: 28px 0 30px 0;
-      a {
-        float: left;
-        img {
-          width: 46px;
-          height: 46px;
-          border-radius: 50%;
-        }
-      }
-      .site-name {
-        float: left;
-        margin: 0 0 0 20px;
-      }
-    }
-    nav.topnav {
-      float: right;
-      color: #fff;
-      ul {
-        li {
-          float: left;
-          margin: 44px 40px 0 0;
-          &.active {
-            opacity: 0.7;
-          }
-          &:hover {
-            opacity: 0.7;
-          }
-          &:last-child {
-            margin-right: 0;
-          }
-          a {
-            font-size: 14px;
-          }
-        }
-      }
+}
+.additional-info {
+  width: 100%;
+  background: $madison;
+}
+.additional-info-wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 6px 0 9px 0;
+  overflow: hidden;
+}
+.contacts {
+  &__item {
+    display: inline-block;
+    float: left;
+    color: $late-slate-gray;
+    a {
+      display: inline-block;
+      margin: 0 30px 0 8px;
+      font-size: 12px;
     }
   }
 }
-//Placeholders
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color: $late-slate-gray;
-  font-style: italic;
-  font-weight: normal;
+.search-form {
+  position: relative;
+  &--move-right{
+    float: right;
+  }
+  &__label{
+    opacity: 0;
+  }
+  &__field{
+    outline: none;
+    border: none;
+    background: $cello;
+    width: 360px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 0 40px 0 13px;
+    color: #fff;
+  }
+  &__search-icon {
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    color: $late-slate-gray;;
+  }
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: $late-slate-gray;
-  font-style: italic;
-  opacity: 1;
-  font-weight: normal;
+
+.header-wrapper {
+  max-width: $max-width;
+  overflow: hidden;
+  margin: 0 auto;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: $late-slate-gray;
-  font-style: italic;
-  opacity: 1;
-  font-weight: normal;
+
+.logo {
+  &--move-left{
+    float: left;
+  }
+  padding: 28px 0 30px 0;
+  &__image-link {
+    float: left;
+  }
+  &__img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+  }
+  &__site-name {
+    float: left;
+    margin: 0 0 0 20px;
+  }
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $late-slate-gray;
-  font-style: italic;
-  font-weight: normal;
+
+.top-navigation-list {
+  &--move-right{
+    float: right;
+  }
+  color: #fff;
+  font-size: 14px;
+  &__item {
+    float: left;
+    margin: 44px 40px 0 0;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &--active {
+      opacity: 0.7;
+    }
+  }
 }

@@ -2,7 +2,7 @@ var tabContent;
 var tabLinks;
 
 tabContent = document.getElementsByClassName("tab-panel");
-tabLinks = document.getElementsByClassName("tab-link");
+tabLinks = document.getElementsByClassName("tabs-navigation__item");
 
 function openTab(targetTab) {
 
@@ -20,10 +20,10 @@ function openTab(targetTab) {
   }
 
   for (var j = 0; j < tabLinks.length; j++) {
-    tabLinks[j].className = "tab-link";
+    tabLinks[j].className = "tabs-navigation__item";
   }
 
-  tabLinks[indexOfTargetTab].className = "tab-link active";
+  tabLinks[indexOfTargetTab].className = "tabs-navigation__item tabs-navigation__item--active";
   tabContent[indexOfTargetTab].className = "tab-panel";
 }
 
@@ -32,7 +32,7 @@ function openTabByDefault() {
     tabContent[i].className = "tab-panel hidden";
   }
 
-  tabLinks[0].className = "tab-link active";
+  tabLinks[0].className = "tabs-navigation__item tabs-navigation__item--active";
   tabContent[0].className = "tab-panel";
 }
 

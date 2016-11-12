@@ -1,0 +1,168 @@
+.sidebar {
+  float: left;
+  max-width: 362px;
+  margin: 0 0 0 60px;
+  overflow: hidden;
+}
+.widget {
+  margin: 0 0 65px 0;
+}
+.archive-widget {
+  &__title {
+    font: normal 20px Varela;
+    color: $cello;
+    margin: 0 0 23px 0;
+  }
+  &__date-list-item-link {
+    display: inline-block;
+    font-size: 16px;
+    color: $slate-gray;
+    position: relative;
+    margin: 0 0 0 27px;
+    line-height: 40px;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:before {
+      position: absolute;
+      content: " ";
+      background: url("../images/bullet.png");
+      left: -27px;
+      top: 12px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.newsletter-widget {
+  background: $cello;
+  padding: 20px 40px;
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+  }
+}
+.subscribe-form {
+  &__label {
+    visibility: hidden;
+  }
+  &__email {
+    width: 232px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border-radius: 2px;
+    font: 800 14px "Open Sans";
+  }
+  &__submit {
+    display: block;
+    width: 232px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 20px;
+    outline: none;
+    background: #82d6df;
+    color: #fff;
+    font: 800 14px "Open Sans";
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      background: #73b9bf;
+    }
+  }
+}
+.popular-widget {
+  .tabs-navigation {
+    width: 100%;
+    float: left;
+    &__item {
+      float: left;
+      color: $cello;
+      font-weight: bold;
+      opacity: 0.7;
+      font-size: 14px;
+      &--active {
+        background: $spray;
+        opacity: 1;
+        color: #fff;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      a {
+        display: block;
+        padding: 12px 13px;
+      }
+    }
+  }
+  .tab-panels {
+    border: solid 1px #e4e5db;
+    clear: both;
+    padding: 25px 0 0 25px;
+  }
+}
+.article-popular {
+  max-width: 311px;
+  margin: 0 0 40px 0;
+  &__image-wrapper {
+    max-width: 311px;
+    a:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-family: Varela;
+    margin: 8px 0;
+    a:hover {
+      color: $spray;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    color: $slate-gray;
+  }
+}
+
+.tags-widget {
+  &__title{
+    font: normal 20px Varela;
+    color: $cello;
+    margin: 0 0 23px 0;
+  }
+}
+.tags-list {
+  margin-left: -5px;
+  overflow: hidden;
+  &__item {
+    display: inline-block;
+    margin: 5px;
+    float: left;
+    &:last-child {
+      margin-left: 0;
+    }
+    a {
+      display: inline-block;
+      padding: 5px 15px;
+      background: #dfe6e7;
+      color: $cello;
+      border-radius: 30px;
+      font-size: 12px;
+      &:hover {
+        background: $spray;
+        color: #fff;
+      }
+    }
+  }
+}
