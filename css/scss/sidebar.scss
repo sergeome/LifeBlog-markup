@@ -13,24 +13,28 @@
     color: $cello;
     margin: 0 0 23px 0;
   }
-  &__date-list-item-link {
-    display: inline-block;
-    font-size: 16px;
-    color: $slate-gray;
-    position: relative;
-    margin: 0 0 0 27px;
-    line-height: 40px;
-    &:hover {
-      opacity: 0.7;
-    }
-    &:before {
-      position: absolute;
-      content: " ";
-      background: url("../images/bullet.png");
-      left: -27px;
-      top: 12px;
-      width: 16px;
-      height: 16px;
+}
+.date-list {
+  &__item {
+    a {
+      display: inline-block;
+      font-size: 16px;
+      color: $slate-gray;
+      position: relative;
+      margin: 0 0 0 27px;
+      line-height: 40px;
+      &:hover {
+        opacity: 0.7;
+      }
+      &:before {
+        position: absolute;
+        content: " ";
+        background: url("../images/bullet.png");
+        left: -27px;
+        top: 12px;
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }
@@ -134,9 +138,8 @@
     color: $slate-gray;
   }
 }
-
 .tags-widget {
-  &__title{
+  &__title {
     font: normal 20px Varela;
     color: $cello;
     margin: 0 0 23px 0;

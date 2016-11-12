@@ -3,7 +3,6 @@
   max-width: $max-width;
   margin: 0 auto;
 }
-
 .breadcrumbs {
   padding: 36px 0 26px 9px;
   margin: 0 0 64px 0;
@@ -36,11 +35,9 @@
     }
   }
 }
-
 .articles-list {
   float: left;
 }
-
 .article {
   max-width: 720px;
   margin: 0 0 72px 0;
@@ -70,7 +67,7 @@
       color: $spray;
     }
   }
-  &__description{
+  &__description {
     font-size: 14px;
     color: $slate-gray;
     line-height: 26px;
@@ -95,38 +92,41 @@
     }
   }
 }
-
 .pagination {
   overflow: hidden;
   margin: 0 0 30px 0;
   text-align: center;
+
   &__item {
     display: inline;
+
     &:first-child {
       float: left;
     }
     &:last-child {
       float: right;
     }
-  }
-  &__item-link {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background: #dfe6e7;
-    color: $cello;
-    padding: 19px 0 0 0;
-    box-sizing: border-box;
-    font: 600 18px "Open Sans", sans-serif;
-    &--active {
+
+    a {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: #dfe6e7;
+      color: $cello;
+      padding: 19px 0 0 0;
+      box-sizing: border-box;
+      font: 600 18px "Open Sans", sans-serif;
+      &:hover {
+        background: $cello;
+        color: #fff;
+      }
+    }
+
+    &--active a{
       background: $cello;
       color: #fff;
     }
-    &:hover {
-      background: $cello;
-      color: #fff;
-    }
-    &--prev {
+    &--prev a {
       background: $spray;
       position: relative;
       &:hover {
@@ -142,7 +142,7 @@
         color: #fff;
       }
     }
-    &--next {
+    &--next a {
       background: $spray;
       position: relative;
       &:hover {
