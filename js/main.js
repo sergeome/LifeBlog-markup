@@ -52,6 +52,7 @@ lifeBlog = (function ($) {
 
   o.mobileNav = function () {
     var mobileNavSwitcher = $(".mobile-nav");
+    var topNavList = $(".top-navigation-list");
 
     function toggleMobileNav(event) {
       var mobileMenu = event.currentTarget;
@@ -61,10 +62,12 @@ lifeBlog = (function ($) {
         }, 300, function () {
           $(this).removeClass('mobile-nav--expanded');
         });
+        $(topNavList).animate({width: "0"}, 300);
       } else {
         $(mobileMenu).addClass('mobile-nav--expanded').animate({
           width: "100%"
         }, 300);
+        $(topNavList).animate({width: "60%"}, 300);
       }
     }
 
