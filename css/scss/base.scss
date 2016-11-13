@@ -73,3 +73,9 @@ a {
 .visible{
   display: block;
 }
+
+//Mixins
+@mixin wrapper-padding() {
+  padding-right: 30px;
+  padding-left: 30px;
+}

@@ -2,6 +2,8 @@
   clear: both;
   max-width: $max-width;
   margin: 0 auto;
+  overflow: hidden;
+  @include wrapper-padding();
 }
 .breadcrumbs {
   padding: 36px 0 26px 9px;
@@ -37,27 +39,31 @@
 }
 .articles-list {
   float: left;
+  width: calc(100% - 450px);
 }
 .article {
-  max-width: 720px;
   margin: 0 0 72px 0;
   &__image {
     border: 1px solid #dfe6e7;
     padding: 19px;
     position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   &__published-time {
     position: absolute;
-    width: 70px;
     height: 70px;
     background: $spray;
     left: 0;
-    top: 150px;
+    top: 40%;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
-    padding: 17px 0 0 10px;
+    padding: 17px 10px 0 10px;
     box-sizing: border-box;
+    word-spacing: 3px;
   }
   &__title {
     font-family: Varela;

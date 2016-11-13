@@ -12,34 +12,73 @@
   margin: 0 auto;
   padding: 6px 0 9px 0;
   overflow: hidden;
+  @include wrapper-padding();
 }
 .contacts {
+  float: left;
+  overflow: hidden;
   &__item {
     display: inline-block;
     float: left;
     color: $late-slate-gray;
     a {
       display: inline-block;
-      margin: 0 30px 0 8px;
+      margin: 0 27px 0 21px;
       font-size: 12px;
+    }
+    &-location{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "\f124";
+        font-family: $FontAwesome;
+        font-size: large;
+        top: 3px;
+        left: 0;
+      }
+    }
+    &-phone{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "\f10b";
+        font-size: x-large;
+        font-family: $FontAwesome;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-email{
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "\f0e0";
+        font-family: $FontAwesome;
+        top: 4px;
+        left: 0;
+      }
+    }
+    &:last-child a {
+      margin-right: 0;
     }
   }
 }
 .search-form {
-  position: relative;
   float: right;
   &__label{
-    opacity: 0;
+    display: none;
   }
   &__field{
+    position: relative;
     outline: none;
     border: none;
     background: $cello;
     width: 360px;
     height: 25px;
     border-radius: 15px;
-    padding: 0 40px 0 13px;
+    padding: 0 30px 0 13px;
     color: #fff;
+    box-sizing: border-box;
   }
   &__search-icon {
     position: absolute;
@@ -48,11 +87,25 @@
     color: $late-slate-gray;;
   }
 }
+.search-field-wrapper{
+  position: relative;
+  &:after{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-family: "FontAwesome";
+    display: inline-block;
+    content: "\f002";
+    color: #758594;
+  }
+}
 
 .header-wrapper {
   max-width: $max-width;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
+  @include wrapper-padding();
 }
 
 .logo {
@@ -67,18 +120,24 @@
     border-radius: 50%;
   }
   &__site-name {
-    float: left;
+    position: absolute;
     margin: 0 0 0 20px;
+    left: 76px;
   }
 }
 
+.top-navigation{
+  overflow: hidden;
+  margin: 44px 0 0 0;
+  position: relative;
+}
 .top-navigation-list {
   float: right;
   color: #fff;
   font-size: 14px;
   &__item {
     float: left;
-    margin: 44px 40px 0 0;
+    margin: 0 40px 0 0;
     &:hover {
       opacity: 0.7;
     }
@@ -89,4 +148,7 @@
       opacity: 0.7;
     }
   }
+}
+.mobile-nav{
+  display: none;
 }
