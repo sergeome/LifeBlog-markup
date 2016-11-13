@@ -64,11 +64,8 @@ a {
   font-weight: normal;
 }
 //Helper Classes
-.hidden {
+.hidden{
   display: none;
-}
-.visible {
-  display: block;
 }
 .clearfix {
   &::before, &::after {
