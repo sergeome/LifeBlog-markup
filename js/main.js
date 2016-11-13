@@ -58,12 +58,15 @@ lifeBlog = (function ($) {
       var mobileMenu = event.currentTarget;
       if ($(mobileMenu).hasClass('mobile-nav--expanded')) {
         $(mobileMenu).animate({
-          width: "50",
-          marginRight: "30"
+          width: "50px",
+          marginRight: "30px"
         }, 300, function () {
           $(this).removeClass('mobile-nav--expanded');
         });
-        $(topNavList).animate({width: "0"}, 300 , function () {
+        $(topNavList).animate({
+          width: "0",
+          right: "30px"
+        }, 300 , function () {
           $(topNavList).css("display", "none");
         });
       } else {
@@ -74,7 +77,10 @@ lifeBlog = (function ($) {
         var navListHeight = $("body").height() - 321;
         $(topNavList).css("display", "block");
         $(topNavList).css("height", navListHeight);
-        $(topNavList).animate({width: "80%"}, 300);
+        $(topNavList).animate({
+          width: "80%",
+          right: "0"
+        }, 300);
       }
     }
 
