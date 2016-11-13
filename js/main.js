@@ -58,7 +58,8 @@ lifeBlog = (function ($) {
       var mobileMenu = event.currentTarget;
       if ($(mobileMenu).hasClass('mobile-nav--expanded')) {
         $(mobileMenu).animate({
-          width: "50"
+          width: "50",
+          marginRight: "30"
         }, 300, function () {
           $(this).removeClass('mobile-nav--expanded');
         });
@@ -67,7 +68,8 @@ lifeBlog = (function ($) {
         });
       } else {
         $(mobileMenu).addClass('mobile-nav--expanded').animate({
-          width: "100%"
+          width: "100%",
+          marginRight: "0"
         }, 300);
         var navListHeight = $("body").height() - 321;
         $(topNavList).css("display", "block");

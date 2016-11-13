@@ -6,6 +6,8 @@
 .footer-wrapper {
   max-width: $max-width;
   margin: 0 auto;
+  @include wrapper-padding();
+  box-sizing: border-box;
 }
 .copyright{
   text-align: center;
