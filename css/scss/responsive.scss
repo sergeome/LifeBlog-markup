@@ -105,17 +105,21 @@
     margin-top: 27px;
   }
   .top-navigation-list{
-    background: red !important;
+    display: none;
     position: absolute;
     z-index: 9999;
     background: $cello;
     right: 0;
-    top: 20px;
+    top: 50px;
     width: 0;
-    height: 100%;
+    padding: 43px 0 43px 28px;
   }
   .top-navigation-list__item{
     float: none;
     display: block;
+    padding: 0 0 42px 0;
+    &:last-child{
+      padding-bottom: 0;
+    }
   }
 }

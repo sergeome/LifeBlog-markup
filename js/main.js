@@ -62,12 +62,17 @@ lifeBlog = (function ($) {
         }, 300, function () {
           $(this).removeClass('mobile-nav--expanded');
         });
-        $(topNavList).animate({width: "0"}, 300);
+        $(topNavList).animate({width: "0"}, 300 , function () {
+          $(topNavList).css("display", "none");
+        });
       } else {
         $(mobileMenu).addClass('mobile-nav--expanded').animate({
           width: "100%"
         }, 300);
-        $(topNavList).animate({width: "60%"}, 300);
+        var navListHeight = $("body").height() - 321;
+        $(topNavList).css("display", "block");
+        $(topNavList).css("height", navListHeight);
+        $(topNavList).animate({width: "80%"}, 300);
       }
     }
 

@@ -17,7 +17,6 @@ $FontAwesome: 'FontAwesome';
   font-family: Varela;
   src: url("../fonts/VarelaRound.ttf");
 }
-
 //Main classes
 body {
   font-family: $open-sans;
@@ -41,7 +40,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 //Placeholders
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color: $late-slate-gray;
@@ -65,15 +63,23 @@ a {
   font-style: italic;
   font-weight: normal;
 }
-
 //Helper Classes
 .hidden {
   display: none;
 }
-.visible{
+.visible {
   display: block;
 }
-
+.clearfix {
+  &::before, &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &::after{
+    clear: both;
+  }
+}
 //Mixins
 @mixin wrapper-padding() {
   padding-right: 30px;

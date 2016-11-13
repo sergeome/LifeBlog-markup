@@ -102,9 +102,9 @@
 
 .header-wrapper {
   max-width: $max-width;
-  overflow: hidden;
   margin: 0 auto;
   position: relative;
+  box-sizing: border-box;
   @include wrapper-padding();
 }
 
@@ -127,9 +127,11 @@
 }
 
 .top-navigation{
-  overflow: hidden;
+  float: right;
+  box-sizing: border-box;
   margin: 44px 0 0 0;
   position: relative;
+  width: calc(100% - 47px);
 }
 .top-navigation-list {
   float: right;
