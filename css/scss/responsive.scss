@@ -131,6 +131,11 @@
     top: 50px;
     width: 0;
     padding: 43px 0 43px 28px;
+    &--expanded{
+      width: 80%;
+      right: 0;
+      display: block;
+    }
   }
   .top-navigation-list__item {
     float: none;

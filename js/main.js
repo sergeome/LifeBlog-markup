@@ -80,7 +80,8 @@ lifeBlog = (function ($) {
           width: "0",
           right: "30px"
         }, 300 , function () {
-          $(topNavList).css("display", "none");
+          $(this).removeClass('top-navigation-list--expanded');
+          $(this).removeAttr('style');
         });
       } else {
         //If Mobile menu isn't opened (i.e. doesn't have mobile-nav--expanded class)
@@ -100,7 +101,10 @@ lifeBlog = (function ($) {
         $(topNavList).animate({
           width: "80%",
           right: "0"
-        }, 300);
+        }, 300,function () {
+          $(this).addClass('top-navigation-list--expanded');
+          $(this).removeAttr('style');
+        });
       }
     }
 
