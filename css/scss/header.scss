@@ -21,9 +21,12 @@
     display: inline-block;
     float: left;
     color: $late-slate-gray;
+    &:hover{
+      color: #fff;
+    }
     a {
       display: inline-block;
-      margin: 0 27px 0 21px;
+      padding: 0 27px 0 21px;
       font-size: 12px;
     }
     &-location{

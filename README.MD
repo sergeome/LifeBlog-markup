@@ -2,20 +2,20 @@
 
 Responsive blog Markup example.
 
-What were used:
+What was used:
 
 HTML
-* HTML5
-* "Shema.org" Microdata
+* [HTML5](https://www.w3.org/TR/html5/)
+* ["Shema.org" Microdata](http://schema.org/)
 * Snippets
 
 CSS
-* SCSS preprocessor
-* BEM methodology
+* [SCSS preprocessor](http://sass-lang.com/)
+* [BEM methodology](https://en.bem.info/methodology/)
 * Responsive design with media query
 
 Javascript
-* JQuery library
+* [JQuery](https://jquery.com/)
 * Modular approach
 
 [w3c validation link](https://validator.w3.org/nu/?doc=http%3A%2F%2Fserver.sergeome.com%2Fportfolio%2Flifeblog%2F)

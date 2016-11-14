@@ -73,6 +73,7 @@ lifeBlog = (function ($) {
         }, 300, function () {
           //When animation is finished remove class
           $(this).removeClass('mobile-nav--expanded');
+          $(this).removeAttr('style');
         });
         //And also hide navigation list smoothly
         $(topNavList).animate({
@@ -84,15 +85,17 @@ lifeBlog = (function ($) {
       } else {
         //If Mobile menu isn't opened (i.e. doesn't have mobile-nav--expanded class)
         //Smoothly add it
-        $(mobileMenu).addClass('mobile-nav--expanded').animate({
+        $(mobileMenu).css("border-radius", "30px 0 0 30px");
+        $(mobileMenu).animate({
           width: "100%",
           marginRight: "0"
-        }, 300);
+        }, 300, function () {
+          $(this).addClass('mobile-nav--expanded');
+          $(this).removeAttr('style');
+        });
         //Get Height of the body in order to expand navigation list full screen
-        var navListHeight = $("body").height() - 321;
         //Set CSS for navigation list
         $(topNavList).css("display", "block");
-        $(topNavList).css("height", navListHeight);
         //Show navigation list smoothly
         $(topNavList).animate({
           width: "80%",
