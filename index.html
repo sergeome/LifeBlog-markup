@@ -4,10 +4,13 @@
     <title>LifeBlog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Styles-->
     <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--JavaScript-->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/main.js"></script>
+    <!--MetaData and Snippets-->
     <meta name="description" content="LifeBlog. We make a difference.">
     <meta property="og:locale" content="en_EN">
     <meta property="og:title" content="LifeBlog">
@@ -18,9 +21,13 @@
     <meta property="og:site_name" content="lifeblog.com">
 </head>
 <body>
+<!-- .page-header-->
 <header class="page-header">
+    <!-- .additional-info-->
     <div class="additional-info">
+        <!--  .additional-info-wrapper-->
         <div class="additional-info-wrapper">
+            <!--  .contacts-->
             <ul class="contacts">
                 <li class="contacts__item contacts__item-location">
                     <a href="#">505 Custom Street, Allen, TX 12345</a>
@@ -32,28 +39,40 @@
                     <a href="#">info@lifeblog.com</a>
                 </li>
             </ul>
+            <!--end .contacts-->
             <form class="search-form">
                 <label class="search-form__label" for="search">search</label>
                 <div class="search-field-wrapper"><input class="search-form__field" type="text" id="search"
                                                          placeholder="search..."></div>
             </form>
         </div>
+        <!--end  .additional-info-wrapper-->
     </div>
+    <!--end .additional-info-->
+    <!-- .header-wrapper-->
     <div class="header-wrapper clearfix">
+        <!-- .logo-->
         <div class="logo">
             <a class="logo__image-link" href="#"><img class="logo__image" src="images/logo.png" alt="logo"></a>
+            <!-- .logo__site-name-->
             <div class="logo__site-name">
                 <h1><a href="#">LifeBlog</a></h1>
                 <h2><a href="#">We make a difference</a></h2>
             </div>
+            <!--end .logo__site-name-->
         </div>
+        <!--end .logo-->
+        <!-- .top-navigation-->
         <nav class="top-navigation clearfix">
+            <!-- .mobile-nav-->
             <div class="mobile-nav">
                 <p class="mobile-nav__title">Navigation</p>
                 <div class="mobile-nav__item nav-item-top"></div>
                 <div class="mobile-nav__item nav-item-middle"></div>
                 <div class="mobile-nav__item nav-item-bottom"></div>
             </div>
+            <!--end .mobile-nav-->
+            <!-- .top-navigation-list-->
             <ul class="top-navigation-list">
                 <li class="top-navigation-list__item top-navigation-list__item--active"><a href="#">Home</a></li>
                 <li class="top-navigation-list__item"><a href="#">Web Design</a></li>
@@ -61,89 +80,130 @@
                 <li class="top-navigation-list__item"><a href="#">SEO</a></li>
                 <li class="top-navigation-list__item"><a href="#">About</a></li>
             </ul>
+            <!--end .top-navigation-list-->
         </nav>
+        <!--end .top-navigation-->
     </div>
+    <!--end .header-wrapper-->
 </header>
+<!--end .page-header-->
+<!-- .middle-->
 <div class="middle">
+    <!-- .breadcrumbs-->
     <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a href="#">Home</a></li>
         <li class="breadcrumbs__item"><a href="#">Categories</a></li>
         <li class="breadcrumbs__item"><a href="#">Popular</a></li>
         <li class="breadcrumbs__item breadcrumbs__item--active">Lorem</li>
     </ul>
+    <!--end .breadcrumbs-->
+    <!-- .articles-list-->
     <section class="articles-list">
+        <!-- .article-->
         <article class="article" itemscope itemtype="http://schema.org/Article">
+            <!-- .article__image-->
             <div class="article__image">
+                <!-- .article__published-time-->
                 <div class="article__published-time">
-                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
-                    <div class="article__year">2014</div>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">January 03</time>
+                    <div class="article__year">2016</div>
                 </div>
+                <!--end .article__published-time-->
+                <!-- .article image metadata-->
                 <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
                     <img itemprop="url" src="content-images/city-q-c-680-330-1.jpg" alt="#">
                     <meta itemprop="width" content="680" />
                     <meta itemprop="height" content="330" />
                 </div>
+                <!--end .article image metadata-->
             </div>
+            <!--end .article__image-->
             <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
             <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
                     more</a></div>
         </article>
+        <!--end .article-->
+        <!-- .article-->
         <article class="article" itemscope itemtype="http://schema.org/Article">
+            <!-- .article__image-->
             <div class="article__image">
+                <!-- .article__published-time-->
                 <div class="article__published-time">
-                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 10</time>
                     <div class="article__year">2014</div>
                 </div>
+                <!--end .article__published-time-->
+                <!-- .article image metadata-->
                 <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
                     <img itemprop="url" src="content-images/city-q-c-680-330-2.jpg" alt="#">
                     <meta itemprop="width" content="680" />
                     <meta itemprop="height" content="330" />
                 </div>
+                <!--end .article image metadata-->
             </div>
+            <!--end .article__image-->
             <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
             <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
                 more</a></div>
         </article>
+        <!--end .article-->
+        <!-- .article-->
         <article class="article" itemscope itemtype="http://schema.org/Article">
+            <!-- .article__image-->
             <div class="article__image">
+                <!-- .article__published-time-->
                 <div class="article__published-time">
-                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
-                    <div class="article__year">2014</div>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">February 25</time>
+                    <div class="article__year">2013</div>
                 </div>
+                <!--end .article__published-time-->
+                <!-- .article image metadata-->
                 <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
                     <img itemprop="url" src="content-images/city-q-c-680-330-3.jpg" alt="#">
                     <meta itemprop="width" content="680" />
                     <meta itemprop="height" content="330" />
                 </div>
+                <!--end .article image metadata-->
             </div>
+            <!--end .article__image-->
             <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
             <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
                 more</a></div>
         </article>
+        <!--end .article-->
+        <!-- .article-->
         <article class="article" itemscope itemtype="http://schema.org/Article">
+            <!-- .article__image-->
             <div class="article__image">
+                <!-- .article__published-time-->
                 <div class="article__published-time">
-                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
-                    <div class="article__year">2014</div>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">July 12</time>
+                    <div class="article__year">2010</div>
                 </div>
+                <!--end .article__published-time-->
+                <!-- .article image metadata-->
                 <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
                     <img itemprop="url" src="content-images/city-q-c-680-330-4.jpg" alt="#">
                     <meta itemprop="width" content="680" />
                     <meta itemprop="height" content="330" />
                 </div>
+                <!--end .article image metadata-->
             </div>
+            <!--end .article__image-->
             <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
             <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
                 more</a></div>
         </article>
+        <!--end .article-->
+        <!-- .pagination-->
         <ul class="pagination">
             <li class="pagination__item pagination__item--prev"><a href="#"></a></li>
             <li class="pagination__item"><a href="#">1</a></li>
@@ -153,11 +213,17 @@
             <li class="pagination__item"><a href="#">5</a></li>
             <li class="pagination__item pagination__item--next"><a href="#"></a></li>
         </ul>
+        <!--end .pagination-->
     </section>
+    <!--end .articles-list-->
+    <!-- .sidebar-->
     <aside class="sidebar">
+        <!-- .widget-->
         <div class="widget">
+            <!-- .archive-widget-->
             <div class="archive-widget">
                 <div class="archive-widget__title">Archive</div>
+                <!-- .date-list-->
                 <ul class="date-list">
                     <li class="date-list__item"><a href="#">January
                         2016 (265)</a></li>
@@ -170,22 +236,34 @@
                     <li class="date-list__item"><a href="#">May
                         2012 (10)</a></li>
                 </ul>
+                <!--end .date-list-->
             </div>
+            <!--end .archive-widget-->
         </div>
+        <!--end .widget-->
+        <!-- .widget-->
         <div class="widget">
+            <!-- .newsletter-widget-->
             <div class="newsletter-widget">
                 <div class="newsletter-widget__title">
                     Subscribe to our newsletter
                 </div>
+                <!-- .subscribe-form-->
                 <form class="subscribe-form">
                     <label class="subscribe-form__label" for="email"></label>
                     <input class="subscribe-form__email" type="text" id="email" placeholder="Enter your email...">
                     <input class="subscribe-form__submit" type="submit" value="Subscribe">
                 </form>
+                <!--end .subscribe-form-->
             </div>
+            <!--end .newsletter-widget-->
         </div>
+        <!--end .widget-->
+        <!-- .widget-->
         <div class="widget">
+            <!-- .popular-widget-->
             <div class="popular-widget">
+                <!-- .tabs-navigation-->
                 <ul class="tabs-navigation">
                     <li class="tabs-navigation__item"><a href="javascript:void(0)">Most Viewed</a></li>
                     <li class="tabs-navigation__item"><a href="javascript:void(0)">Most
@@ -193,8 +271,12 @@
                     <li class="tabs-navigation__item"><a href="javascript:void(0)">Most
                         Shared</a></li>
                 </ul>
+                <!--end .tabs-navigation-->
+                <!-- .tab-panels-->
                 <div class="tab-panels">
+                    <!-- .tab-panel-->
                     <div class="tab-panel">
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-4.jpg" alt="logo"></a>
@@ -207,6 +289,8 @@
                                 <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-3.jpg" alt="logo"></a>
@@ -215,24 +299,12 @@
                                 <a href="#">My custom post please take a minute to read this kind of very interested
                                     info</a>
                             </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"><img src="content-images/city-q-c-680-330-1.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-2.jpg" alt="logo"></a>
@@ -241,26 +313,12 @@
                                 <a href="#">My custom post please take a minute to read this kind of very interested
                                     info</a>
                             </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-panel">
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"><img src="content-images/city-q-c-680-330-3.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-1.jpg" alt="logo"></a>
@@ -269,65 +327,14 @@
                                 <a href="#">My custom post please take a minute to read this kind of very interested
                                     info</a>
                             </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"><img src="content-images/city-q-c-680-330-3.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"><img src="content-images/city-q-c-680-330-4.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
+                        <!--end .article-popular-->
                     </div>
                     <div class="tab-panel">
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"> <img src="content-images/city-q-c-680-330-2.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
-                        <div class="article-popular">
-                            <div class="article-popular__image-wrapper">
-                                <a href="#"><img src="content-images/city-q-c-680-330-4.jpg" alt="logo"></a>
-                            </div>
-                            <div class="article-popular__title">
-                                <a href="#">My custom post please take a minute to read this kind of very interested
-                                    info</a>
-                            </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
-                            </div>
-                        </div>
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-3.jpg" alt="logo"></a>
@@ -336,11 +343,26 @@
                                 <a href="#">My custom post please take a minute to read this kind of very interested
                                     info</a>
                             </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-4.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
                         <div class="article-popular">
                             <div class="article-popular__image-wrapper">
                                 <a href="#"><img src="content-images/city-q-c-680-330-1.jpg" alt="logo"></a>
@@ -349,18 +371,97 @@
                                 <a href="#">My custom post please take a minute to read this kind of very interested
                                     info</a>
                             </div>
-                            <div class="article-popular__description">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit.
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
                             </div>
                         </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-2.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
                     </div>
+                    <div class="tab-panel">
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-1.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-3.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-2.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
+                        <!-- .article-popular-->
+                        <div class="article-popular">
+                            <div class="article-popular__image-wrapper">
+                                <a href="#"><img src="content-images/city-q-c-680-330-4.jpg" alt="logo"></a>
+                            </div>
+                            <div class="article-popular__title">
+                                <a href="#">My custom post please take a minute to read this kind of very interested
+                                    info</a>
+                            </div>
+                            <div class="article-popular__description">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <!--end .article-popular-->
+                    </div>
+                    <!--end .tab-panel-->
                 </div>
+                <!--end .tab-panels-->
             </div>
+            <!--end .popular-widget-->
         </div>
+        <!--end .widget-->
+        <!-- .widget-->
         <div class="widget">
+            <!-- .tags-widget-->
             <div class="tags-widget">
                 <div class="tags-widget__title">Tags</div>
+                <!-- .tags-list-->
                 <ul class="tags-list">
                     <li class="tags-list__item"><a href="#">Lorem</a></li>
                     <li class="tags-list__item"><a href="#">Voluptates</a></li>
@@ -375,14 +476,23 @@
                     <li class="tags-list__item"><a href="#">Monemo</a></li>
                     <li class="tags-list__item"><a href="#">Azare</a></li>
                 </ul>
+                <!--end .tags-list-->
             </div>
+            <!--end .tags-widget-->
         </div>
+        <!--end .widget-->
     </aside>
+    <!--end .sidebar-->
 </div>
+<!--end .middle-->
+<!-- .page-footer-->
 <footer class="page-footer">
+    <!-- .footer-wrapper-->
     <div class="footer-wrapper">
         <div class="copyright">© LifeBlog, 2016. All rights reserved. Implemented by sergeome.</div>
     </div>
+    <!--end .footer-wrapper-->
 </footer>
+<!--end .page-footer-->
 </body>
 </html>
