@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/main.js"></script>
+    <meta name="description" content="LifeBlog. We make a difference.">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:title" content="LifeBlog">
+    <meta property="og:description" content="We make a difference">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://lifeblog.com">
+    <meta property="og:image" content="http://lifeblog.com/preview.png">
+    <meta property="og:site_name" content="lifeblog.com">
 </head>
 <body>
 <header class="page-header">
@@ -64,73 +72,77 @@
         <li class="breadcrumbs__item breadcrumbs__item--active">Lorem</li>
     </ul>
     <section class="articles-list">
-        <article class="article">
+        <article class="article" itemscope itemtype="http://schema.org/Article">
             <div class="article__image">
                 <div class="article__published-time">
-                    <time datetime="2014-10-05T09:00Z">March 01</time>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
                     <div class="article__year">2014</div>
                 </div>
-                <img src="content-images/city-q-c-680-330-1.jpg" alt="#">
+                <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                    <img itemprop="url" src="content-images/city-q-c-680-330-1.jpg" alt="#">
+                    <meta itemprop="width" content="680" />
+                    <meta itemprop="height" content="330" />
+                </div>
             </div>
-            <h3 class="article__title"><a href="#">My custom post please take a minute to read this kind of very
+            <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
-            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
+            <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
                     more</a></div>
         </article>
-        <article class="article">
+        <article class="article" itemscope itemtype="http://schema.org/Article">
             <div class="article__image">
                 <div class="article__published-time">
-                    <time datetime="2014-10-05T09:00Z">February 01</time>
-                    <div class="article__year">2013</div>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
+                    <div class="article__year">2014</div>
                 </div>
-                <img src="content-images/city-q-c-680-330-2.jpg" alt="#">
-            </div>
-            <h3 class="article__title">
-                <a href="#">My custom post please take a minute to read this kind of very interested info</a>
-            </h3>
-            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                alias
-                animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima
-                necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#"
-                                                                                     class="article__read-more">Read
-                    more</a></div>
-        </article>
-        <article class="article">
-            <div class="article__image">
-                <div class="article__published-time">
-                    <time datetime="2014-10-05T09:00Z">January 01</time>
-                    <div class="article__year">2012</div>
+                <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                    <img itemprop="url" src="content-images/city-q-c-680-330-2.jpg" alt="#">
+                    <meta itemprop="width" content="680" />
+                    <meta itemprop="height" content="330" />
                 </div>
-                <img src="content-images/city-q-c-680-330-3.jpg" alt="#">
             </div>
-            <h3 class="article__title"><a href="#">My custom post please take a minute to read this kind of very
+            <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
-            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                alias
-                animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima
-                necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#"
-                                                                                     class="article__read-more">Read
-                    more</a></div>
+            <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
+                more</a></div>
         </article>
-        <article class="article">
+        <article class="article" itemscope itemtype="http://schema.org/Article">
             <div class="article__image">
                 <div class="article__published-time">
-                    <time datetime="2014-10-05T09:00Z">June 15</time>
-                    <div class="article__year">2012</div>
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
+                    <div class="article__year">2014</div>
                 </div>
-                <img src="content-images/city-q-c-680-330-4.jpg" alt="#">
+                <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                    <img itemprop="url" src="content-images/city-q-c-680-330-3.jpg" alt="#">
+                    <meta itemprop="width" content="680" />
+                    <meta itemprop="height" content="330" />
+                </div>
             </div>
-            <h3 class="article__title"><a href="#">My custom post please take a minute to read this kind of very
+            <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
                 interested
                 info</a></h3>
-            <div class="article__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                alias
-                animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima
-                necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#"
-                                                                                     class="article__read-more">Read
-                    more</a></div>
+            <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
+                more</a></div>
+        </article>
+        <article class="article" itemscope itemtype="http://schema.org/Article">
+            <div class="article__image">
+                <div class="article__published-time">
+                    <time itemprop="datePublished" datetime="2014-10-05T09:00Z">March 01</time>
+                    <div class="article__year">2014</div>
+                </div>
+                <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                    <img itemprop="url" src="content-images/city-q-c-680-330-4.jpg" alt="#">
+                    <meta itemprop="width" content="680" />
+                    <meta itemprop="height" content="330" />
+                </div>
+            </div>
+            <h3 class="article__title" itemprop="name"><a href="#">My custom post please take a minute to read this kind of very
+                interested
+                info</a></h3>
+            <div class="article__description" itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi at, deserunt dicta dignissimos ex exercitationem facilis fuga fugiat labore maxime minima necessitatibus non quisquam repellat reprehenderit saepe tempore. <a href="#" class="article__read-more">Read
+                more</a></div>
         </article>
         <ul class="pagination">
             <li class="pagination__item pagination__item--prev"><a href="#"></a></li>
